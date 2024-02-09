@@ -1,0 +1,68 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8eae2; /* Color de fondo de respaldo */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #ff80b3; /* Color del título */
+}
+
+main {
+    text-align: center;
+}
+
+.heart-container {
+    position: relative;
+    margin: 30px auto;
+    width: 100px;
+    height: 90px;
+}
+
+.heart {
+    position: absolute;
+    width: 100px;
+    height: 90px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/1200px-Heart_coraz%C3%B3n.svg.png'); /* URL del corazón */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-45deg);
+    animation: beat 1s infinite;
+}
+
+@keyframes beat {
+    0% {
+        transform: scale(0.9) rotate(-45deg);
+    }
+    50% {
+        transform: scale(1) rotate(-45deg);
+    }
+    100% {
+        transform: scale(0.9) rotate(-45deg);
+    }
+}
+
+.message {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.signature {
+    font-style: italic;
+    color: #666;
+    font-size: 16px;
+}
