@@ -1,6 +1,6 @@
 body {
     font-family: 'Crimson Pro', serif;
-    font-size: 22px;
+    font-size: 18px;
     margin: 0;
     padding: 0;
 }
@@ -57,7 +57,7 @@ main {
 }
 
 .message {
-    font-size: 18px;
+    font-size: 22px;
     color: #333;
     margin-bottom: 20px;
 }
