@@ -10,9 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function startFireworks() {
-        // Código para iniciar los fuegos artificiales
-        // Aquí puedes agregar tu código para mostrar el efecto de fuegos artificiales
-        // Puedes utilizar bibliotecas como fireworks.js o crear tu propia animación
-        alert("¡Fuegos artificiales!");
+        const container = document.querySelector('.container');
+        const fireworks = document.createElement('div');
+        fireworks.classList.add('firework');
+        container.appendChild(fireworks);
+        setTimeout(() => {
+            container.removeChild(fireworks);
+        }, 1000);
     }
 });
